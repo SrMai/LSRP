@@ -36,7 +36,7 @@ $NServer2 = 'Los Santos Internacional';
 			<nav id="nav">
 				<ul>
 					<li><a href="index.php">Inicio</a></li>
-					<li><a href="foro/index.php">Foro</a></li>
+					<li><a href="foro/index.phpsss">Foro</a></li>
 					<li><a href="#">Iniciar sesión</a></li>
 				</ul>
 			</nav>
