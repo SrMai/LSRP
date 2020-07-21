@@ -1,6 +1,6 @@
 <?php
-$NServer = 'Los Santos Internacional - Roleplay';
-$NServer2 = 'Los Santos Internacional';
+require 'database.php';
+include 'settings.php';
 ?>
 
 <html>
@@ -10,6 +10,7 @@ $NServer2 = 'Los Santos Internacional';
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -34,10 +35,11 @@ $NServer2 = 'Los Santos Internacional';
 
 			<!-- Nav -->
 			<nav id="nav">
+				<p>	<a href="samp://sv.megamaniacosfr.com:7778">sv.megamaniacosfr.com:7778</a></p>
 				<ul>
 					<li><a href="index.php">Inicio</a></li>
-					<li><a href="foro/index.phpsss">Foro</a></li>
-					<li><a href="#">Iniciar sesión</a></li>
+					<li><a href="foro/index.php">Foro</a></li>
+					<li><a href="login.php">Iniciar sesión</a></li>
 				</ul>
 			</nav>
 
@@ -47,6 +49,9 @@ $NServer2 = 'Los Santos Internacional';
 		<div class="container">
 			<section id="banner">
 				<header>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+					</div>
 					<h2>Bienvenido al test de ingreso.</h2><br>
 					<h3>Por favor responde las preguntas con sinceridad, este proceso es para que puedas ingresar al servidor.</h3><br>
 					<!--Form registro-->
@@ -55,17 +60,11 @@ $NServer2 = 'Los Santos Internacional';
 						<div class="form-row">
 							<div class="col-md-4 mb-3">
 								<label for="validationTooltip01">Nombre</label>
-								<input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Nombre" required>
-								<div class="valid-tooltip">
-									Looks good!
-								</div>
+								<input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre del personaje" value="" required>
 							</div>
 							<div class="col-md-4 mb-3">
 								<label for="validationTooltip02">Apellido</label>
-								<input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Apellido" required>
-								<div class="valid-tooltip">
-									Looks good!
-								</div>
+								<input type="text" class="form-control" id="validationTooltip02" placeholder="Apellido del personaje" value="" required>
 							</div>
 							<div class="col-md-4 mb-3">
 								<label for="validationTooltipUsername">Username</label>
